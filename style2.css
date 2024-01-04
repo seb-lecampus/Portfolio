@@ -1,0 +1,150 @@
+section h3, section p {
+	padding:0px;
+	margin: 0px;
+}
+
+section video {
+	max-height: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	grid-template-rows: minmax(auto, 200px) 0fr 1fr 0fr;
+	/*background-color: #17BFA6;
+	color: #08453C;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+}
+
+header {
+	overflow-y: scroll;
+}
+
+a:visited {
+	color: inherit;
+}
+
+a {
+	color: inherit;
+}
+
+footer {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	/*font-family: fantasy;*/
+}
+
+h2, h3 {
+	/*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+}
+
+nav, footer {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px 0px;
+	/*background-color: #1BE3C5;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.178);*/
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-evenly;
+	list-style-type: none;
+}
+
+nav a, footer a {
+	text-decoration: underline;
+}
+
+#active {
+	text-decoration: underline;
+	text-decoration-thickness: 3px;
+}
+
+footer {
+	padding: 15px 0px;
+}
+
+#main {
+	overflow: hidden scroll;
+	padding: 0px;
+	height: 100%;
+	max-height: 100%;
+}
+
+.layout_flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	row-gap: 30px;
+	padding: 30px 5px;
+}
+
+.layout_flex .card {
+	border: 1px solid black;
+	border-radius: 20px;
+	width: 30%;
+	min-width: 300px;
+	/*background-color: rgb(255 253 206);*/
+}
+
+.layout_flex h3 {
+	text-align: center;
+}
+
+.layout_flex .card img {
+	max-width: 100%;
+}
+
+form #submit {
+	grid-column: -2;
+}
+
+form {
+	width: 50%;
+	margin: auto;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 0fr 1fr;
+	text-align: right;
+}
+
+.layout_two_row {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.layout_two_col {
+	display: flex;
+	align-items: stretch;
+	height: 100%;
+}
+
+.layout_two_col #col1 {
+	width: 50%;
+}
+
+.layout_two_col #col2 {
+	width: 50%;
+}
+
+/*.layout_full div {
+	background-color: rgb(255 253 206);
+	border-radius: 20px;
+}*/
+
+@media screen and not (min-width: 355px) {
+	nav ul {
+		display: list-item;
+	}
+}
